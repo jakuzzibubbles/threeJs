@@ -1,2 +1,11 @@
-# 3D-react-vite-three
-# threeJs
+
+
+   ```bash
+   npm create vite@latest
+   ```
+
+
+
+   ```bash
+   npm install three
+   ```
