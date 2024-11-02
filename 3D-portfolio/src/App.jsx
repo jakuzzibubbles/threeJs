@@ -1,10 +1,12 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.jsx";
+import React from "react";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+function App() {
+  return (
+    <div className="bg-gray-800 text-white min-h-screen flex items-center justify-center">
+      <h1 className="text-4xl">Hello, World!</h1>
+      <canvas id="bg"></canvas>
+    </div>
+  );
+}
+
+export default App;
