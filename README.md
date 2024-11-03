@@ -1,4 +1,6 @@
-<img align: center alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/3D-portfolio/public/demo1.gif?raw=true" />
+<p align: center>
+<img alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/3D-portfolio/public/demo1.gif?raw=true" />
+</p>
 
    ```bash
    npm create vite@latest
