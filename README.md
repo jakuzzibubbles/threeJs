@@ -1,9 +1,4 @@
-### Video Demo
-
-<video width="600" controls>
-  <source src="/public/demo1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img alt="" width="500" src="/public/demo1.gif" />
 
    ```bash
    npm create vite@latest
