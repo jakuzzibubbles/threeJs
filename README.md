@@ -1,4 +1,4 @@
-<img alt="" width="500" src="/public/demo1.gif" />
+<img alt="" width="500" src="./public/demo1.gif" />
 
    ```bash
    npm create vite@latest
