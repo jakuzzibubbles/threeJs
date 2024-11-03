@@ -1,4 +1,4 @@
-<img alt="hello" width="500" src="./public/demo1.gif" />
+<img alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/3D-portfolio/public/demo1.gif?raw=true" />
 
    ```bash
    npm create vite@latest
