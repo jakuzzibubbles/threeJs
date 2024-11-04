@@ -1,6 +1,9 @@
 <p align="center">
+  <img alt="cube" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/first-cube/public/cube.gif?raw=true" />
   <img alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/background/public/demo1.gif?raw=true" />
 </p>
+
+
 
 
    ```bash
