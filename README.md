@@ -1,5 +1,7 @@
 <p align="center">
+  <h3>Cube</h3>
   <img alt="cube" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/first-cube/public/cube.gif?raw=true" />
+  <h3>background</h3>
   <img alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/background/public/demo1.gif?raw=true" />
 </p>
 
