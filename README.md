@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="hello" width="500" src="/public/cube.gif" />
+  <img alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/public/cube.gif?raw=true" />
 </p>
 
 <p align="center">
