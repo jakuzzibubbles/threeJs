@@ -1,6 +1,7 @@
 <p align="center">
-  <img alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/public/cube.gif?raw=true" />
+  <img alt="hello" width="500" src="https://raw.githubusercontent.com/jakuzzibubbles/threeJs/main/public/cube.gif" />
 </p>
+
 
 <p align="center">
   <img alt="hello" width="500" src="https://github.com/jakuzzibubbles/threeJs/blob/main/background/public/demo1.gif?raw=true" />
