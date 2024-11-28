@@ -1,31 +1,34 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import SceneInit from "./components/SceneInit"; // Import the background component
+import Skills from "./components/Skills";
+import SceneInit from "./components/SceneInit";
 
 const App = () => {
   return (
     <div className="relative">
-      {/* Three.js Background */}
       <SceneInit />
-
-      {/* React Router with Components */}
+      <Navbar />
       <Router>
-        {/* Navbar */}
-        <Header />
-
-        {/* Main Content */}
         <div className="relative z-10">
           <Routes>
-            <Route path="/" element={<Hero />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Skills />
+                  <Projects />
+                  <About />
+                  <Contact />
+                </>
+              }
+            />
           </Routes>
         </div>
 

@@ -4,14 +4,69 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles if needed */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", "sans-serif";
+    color: #ffffff;
+    /* Ensure text is visible against the background */
+    background: transparent;
+  }
 
-html {
-  scroll-behavior: smooth;
+  body {
+    overflow-x: hidden;
+    background: transparent;
+  }
+
+  #bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* Ensure canvas stays behind other content */
+    pointer-events: none;
+    /* Prevent interaction with canvas */
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* Ensures canvas is rendered in the background */
+  }
+
+  .relative-content {
+    position: relative;
+    z-index: 10;
+    /* Content stays above the canvas */
+  }
 }
 
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
+@layer components {
+  .menu-item {
+    @apply text-sm md:text-base font-normal text-white relative cursor-pointer;
+    @apply after:content-[''] after:w-full after:h-[3px] after:bg-cyan-400 after:absolute after:left-0 after:-bottom-2;
+    @apply after:rounded after:opacity-0 after:transition-transform after:transform after:hover:opacity-100 after:hover:translate-x-0;
+  }
+
+  .primary-btn {
+    @apply h-9 md:h-11 bg-cyan-500/70 text-white text-sm px-6 rounded border border-cyan-500;
+    @apply hover:bg-transparent hover:text-cyan-400 hover:border-cyan-400 transition-all;
+  }
+
+  .hero-img {
+    @apply w-[120px] h-[120px] md:w-[139px] md:h-[139px];
+    @apply bg-transparent border border-white rounded-full shadow-lg;
+  }
+
+  .input-box {
+    @apply bg-transparent border border-cyan-600/70 px-4 py-3 text-white;
+    @apply placeholder:text-slate-400 placeholder:text-sm mb-5;
+    @apply focus:outline-none focus:border-cyan-500 focus:border-2;
+  }
 }

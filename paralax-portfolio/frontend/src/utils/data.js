@@ -1,4 +1,3 @@
-// data.js
 import {
   FaGithub,
   FaLinkedin,
@@ -9,7 +8,6 @@ import {
 import {
   SiJavascript,
   SiReact,
-  SiNodeDotJs,
   SiMongodb,
   SiExpress,
   SiHtml5,
@@ -19,41 +17,42 @@ import {
   SiWebpack,
   SiGit,
 } from "react-icons/si";
+import { IoLogoReact, IoLogoNodejs } from "react-icons/io5";
 
 const personalDetails = {
-  name: "Your Name",
-  jobTitle: "Your Job Title (e.g., Full Stack Developer)",
-  location: "City, Country",
+  name: "Linh Nguyen",
+  jobTitle: "Mainly Project Manager | Part-time Software Developer",
+  location: "Berlin, Germany",
   links: [
     {
-      id: 1,
+      id: "1",
       name: "GitHub",
       url: "https://github.com/yourusername",
-      icon: <FaGithub />,
+      icon: FaGithub,
     },
     {
-      id: 2,
+      id: "2",
       name: "LinkedIn",
       url: "https://linkedin.com/in/yourprofile",
-      icon: <FaLinkedin />,
+      icon: FaLinkedin,
     },
     {
-      id: 3,
+      id: "3",
       name: "Portfolio",
       url: "https://yourportfolio.com",
-      icon: <FaGlobe />,
+      icon: FaGlobe,
     },
     {
-      id: 4,
+      id: "4",
       name: "Email",
       url: "mailto:your.email@example.com",
-      icon: <FaEnvelope />,
+      icon: FaEnvelope,
     },
     {
-      id: 5,
+      id: "5",
       name: "Phone",
       url: "tel:+1234567890",
-      icon: <FaPhone />,
+      icon: FaPhone,
     },
   ],
   about: `
@@ -65,65 +64,65 @@ const personalDetails = {
 
 const skills = [
   {
-    id: 1,
+    id: "1",
     name: "JavaScript (ES6+)",
-    icon: <SiJavascript />,
+    icon: SiJavascript,
   },
   {
-    id: 2,
+    id: "2",
     name: "React.js",
-    icon: <SiReact />,
+    icon: SiReact,
   },
   {
-    id: 3,
+    id: "3",
     name: "Node.js",
-    icon: <SiNodeDotJs />,
+    icon: IoLogoNodejs,
   },
   {
-    id: 4,
+    id: "4",
     name: "Express.js",
-    icon: <SiExpress />,
+    icon: SiExpress,
   },
   {
-    id: 5,
+    id: "5",
     name: "MongoDB",
-    icon: <SiMongodb />,
+    icon: SiMongodb,
   },
   {
-    id: 6,
+    id: "6",
     name: "HTML5",
-    icon: <SiHtml5 />,
+    icon: SiHtml5,
   },
   {
-    id: 7,
+    id: "7",
     name: "CSS3",
-    icon: <SiCss3 />,
+    icon: SiCss3,
   },
   {
-    id: 8,
+    id: "8",
     name: "Tailwind CSS",
-    icon: <SiTailwindcss />,
+    icon: SiTailwindcss,
   },
   {
-    id: 9,
+    id: "9",
     name: "Firebase",
-    icon: <SiFirebase />,
+    icon: SiFirebase,
   },
   {
-    id: 10,
+    id: "10",
     name: "Webpack",
-    icon: <SiWebpack />,
+    icon: SiWebpack,
   },
   {
-    id: 11,
+    id: "11",
     name: "Git & GitHub",
-    icon: <SiGit />,
+    icon: SiGit,
   },
 ];
 
 const projects = [
   {
-    id: 1,
+    id: "1",
     title: "Portfolio Website",
     description:
       "A fully responsive portfolio website with a 3D background, built using React, Three.js, and Tailwind CSS. Includes sections for showcasing projects, skills, and contact information.",
@@ -132,7 +131,7 @@ const projects = [
     code: "https://github.com/yourusername/portfolio",
   },
   {
-    id: 2,
+    id: "2",
     title: "E-commerce Platform",
     description:
       "A MERN stack-based e-commerce platform with user authentication, shopping cart functionality, and a fully integrated payment gateway.",
@@ -141,7 +140,7 @@ const projects = [
     code: "https://github.com/yourusername/ecommerce",
   },
   {
-    id: 3,
+    id: "3",
     title: "Blog Platform",
     description:
       "A modern blog platform built with React, Node.js, and MongoDB. Includes features like user authentication, post creation, and a comment system.",
@@ -154,11 +153,11 @@ const projects = [
 const contactInfo = {
   email: {
     text: "your.email@example.com",
-    icon: <FaEnvelope />,
+    icon: FaEnvelope,
   },
   phone: {
     text: "+123 456 7890",
-    icon: <FaPhone />,
+    icon: FaPhone,
   },
   message: "Feel free to reach out to me via email or phone!",
 };

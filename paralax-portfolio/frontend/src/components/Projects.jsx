@@ -1,3 +1,6 @@
+import React from "react";
+import { projects } from "../utils/data";
+
 const Projects = () => {
   return (
     <section className="p-10">
