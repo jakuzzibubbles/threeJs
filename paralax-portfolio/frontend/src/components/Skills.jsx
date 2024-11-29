@@ -1,5 +1,24 @@
-import React from "react";
 import { skills } from "../utils/data";
+import PropTypes from 'prop-types';
+
+const SkillsCard = ({ icon: Icon, title, comment }) => {
+  return (
+    <div className="bg-slate-900 rounded-border border-cyan-400 p-5">
+      <div className="flex items-center justify-between mb-5">
+        <p className="text-base">{title}</p>
+        <Icon className="text-primary text-3xl" />
+      </div>
+
+      <p className="text-xs font-light leading-5 opacity-80">{comment}</p>
+    </div>
+  );
+};
+
+SkillsCard.propTypes = {
+  icon: PropTypes.elementType.isRequired,
+  title: PropTypes.string.isRequired,
+  comment: PropTypes.string.isRequired,
+};
 
 const Skills = () => {
   return (
@@ -20,19 +39,6 @@ const Skills = () => {
         </div>
       </div>
     </section>
-  );
-};
-
-const SkillsCard = ({ icon: Icon, title, comment }) => {
-  return (
-    <div className="bg-slate-900 rounded-border border-cyan-400 p-5">
-      <div className="flex items-center justify-between mb-5">
-        <p className="text-base">{title}</p>
-        <Icon className="text-primary text-3xl" />
-      </div>
-
-      <p className="text-xs font-light leading-5 opacity-80">{comment}</p>
-    </div>
   );
 };
 

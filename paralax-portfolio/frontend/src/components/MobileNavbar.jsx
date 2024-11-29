@@ -1,9 +1,14 @@
-import React from "react";
+import PropTypes from 'prop-types';
+
 
 const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
   const handleScroll = (sectionId) => {
     if (isOpen) setIsMenuOpen(false);
     document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+  };
+  MobileNavbar.propTypes = {
+    isOpen: PropTypes.bool.isRequired,
+    setIsMenuOpen: PropTypes.func.isRequired,
   };
   return (
     <div className="w-screen fixed top-0 z-20">

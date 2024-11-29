@@ -1,5 +1,3 @@
-import React from "react";
-
 const Hero = () => {
   return (
     <section
@@ -8,7 +6,7 @@ const Hero = () => {
     >
       <h1 className="text-5xl font-bold">Welcome to My Portfolio</h1>
       <p className="text-xl mt-4 max-w-2xl">
-        I'm a MERN Stack Developer passionate about building modern, dynamic web
+        I&apos;m a MERN Stack Developer passionate about building modern, dynamic web
         applications.
       </p>
       <a

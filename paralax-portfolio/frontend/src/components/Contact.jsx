@@ -1,5 +1,3 @@
-import React from "react";
-
 const Contact = () => {
   return (
     <section
@@ -7,7 +5,7 @@ const Contact = () => {
       className="h-screen bg-gray-800 py-12 text-white flex flex-col items-center justify-center"
     >
       <h2 className="text-4xl font-bold">Get In Touch</h2>
-      <form className="mt-6 max-w-md w-full">
+      <form className="mt-6 max-w-md w-full" onSubmit={(e) => e.preventDefault()}>
         <input
           type="text"
           placeholder="Your Name"

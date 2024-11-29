@@ -17,7 +17,7 @@ import {
   SiWebpack,
   SiGit,
 } from "react-icons/si";
-import { IoLogoReact, IoLogoNodejs } from "react-icons/io5";
+import { IoLogoNodejs } from "react-icons/io5";
 
 const personalDetails = {
   name: "Linh Nguyen",
