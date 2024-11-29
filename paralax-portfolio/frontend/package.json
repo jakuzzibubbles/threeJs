@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build-css": "npx src/index.css -o public/styles.css",
+    "build-css": "npx src/index.css -o src/compiled.css",
     "lint": "eslint .",
     "preview": "vite preview"
   },
