@@ -12,8 +12,8 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
   };
   return (
     <div className="w-screen fixed top-0 z-20">
-      <div className="w-1/2 h-screen flex flex-col p-8 bg-background">
-        <div className="ui-circle -ml-20 -mt-10" />
+      <div className="w-1/2 h-screen flex flex-col p-8 bg-blue-800/40 border border-sky-900/80">
+        <div className="mb-1" />
 
         <ul>
           <li className="mb-5">
@@ -32,23 +32,11 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
             </a>
           </li>
           <li className="mb-5">
-            <a className="menu-item" onClick={() => handleScroll("about")}>
-              About Me
-            </a>
-          </li>
-          <li className="mb-5">
             <a className="menu-item" onClick={() => handleScroll("contact")}>
-              Contact Me
+              Contact
             </a>
           </li>
         </ul>
-
-        <button
-          className="h-10 bg-primary text-white text-xs md:text-sm px-6 rounded hover:bg-purple-400 hover:text-primary md:block"
-          onClick={() => handleScroll("contact")}
-        >
-          Contact Me
-        </button>
       </div>
 
       <div

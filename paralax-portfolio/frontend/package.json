@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build-css": "npx src/index.css -o src/compiled.css",
+    "build-css": "npx tailwindcss -i src/index.css -o src/compiled.css",
+    "watch-css": "npx tailwindcss -i src/index.css -o src/compiled.css --watch",
     "lint": "eslint .",
     "preview": "vite preview"
   },

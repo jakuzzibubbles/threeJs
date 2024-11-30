@@ -8,7 +8,7 @@ const SceneInit = () => {
     const scene = new THREE.Scene();
 
     const camera = new THREE.PerspectiveCamera(
-      75,
+      100,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -25,7 +25,7 @@ const SceneInit = () => {
 
     // Add stars
     function addStar() {
-      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+      const geometry = new THREE.SphereGeometry(0.2, 24, 24, 24);
       const material = new THREE.MeshStandardMaterial({
         transparent: true, // Enable transparency
         opacity: Math.random(), // Random initial opacity
@@ -40,7 +40,7 @@ const SceneInit = () => {
       // Position stars randomly in 3D space
       const [x, y, z] = Array(3)
         .fill()
-        .map(() => THREE.MathUtils.randFloatSpread(100));
+        .map(() => THREE.MathUtils.randFloatSpread(200));
 
       star.position.set(x, y, z);
       scene.add(star);
@@ -48,7 +48,7 @@ const SceneInit = () => {
       return star;
     }
 
-    const stars = Array(200).fill().map(addStar); // Add multiple stars
+    const stars = Array(999).fill().map(addStar); // Add multiple stars
 
     // Add ambient light
     const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -56,6 +56,14 @@ const SceneInit = () => {
 
     // OrbitControls for camera movement
     const controls = new OrbitControls(camera, renderer.domElement);
+
+    // Scroll event listener for zoom effect
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      camera.position.z = 30 - scrollY * 0.05; // Adjust the multiplier to control zoom speed
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     // Animation loop for moving and color-changing stars
     function animate() {

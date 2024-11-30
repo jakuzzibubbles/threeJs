@@ -1,15 +1,16 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
+import { useState } from 'react';
+import { Link } from 'react-scroll';
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenuMotion } from "react-icons/cg";
 import MobileNavbar from "./MobileNavbar";
 
-const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <>
       {isMenuOpen && (
@@ -30,19 +31,8 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="experience"
-                smooth
-                spy
-                offset={-80}
-                className="menu-item"
-              >
+              <Link to="projects" smooth spy offset={-80} className="menu-item">
                 Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="about" smooth spy offset={-80} className="menu-item">
-                About Me
               </Link>
             </li>
             <li>
@@ -65,4 +55,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

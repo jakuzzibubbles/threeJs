@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -154,7 +154,7 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-  tab-size: 4;
+     tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -199,7 +199,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /*
@@ -559,8 +559,7 @@ video {
 html {
   scroll-behavior: smooth;
   font-family: "Poppins", "sans-serif";
-  color: #ffffff;
-  /* Ensure text is visible against the background */
+  color: inherit;
   background: transparent;
 }
 
@@ -576,9 +575,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 0;
-  /* Ensure canvas stays behind other content */
   pointer-events: none;
-  /* Prevent interaction with canvas */
 }
 
 canvas {
@@ -588,17 +585,15 @@ canvas {
   width: 100%;
   height: 100%;
   z-index: 0;
-  /* Ensures canvas is rendered in the background */
 }
 
-.menu-item{
-  position: relative;
-  cursor: pointer;
+.menu-item {
+  /* Keep text color black, update other styles to transparent pink */
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 768px){
@@ -608,6 +603,10 @@ canvas {
   }
 }
 
+.menu-item {
+  /* Black text */
+}
+
 .menu-item::after{
   position: absolute;
   left: 0px;
@@ -615,8 +614,16 @@ canvas {
   height: 3px;
   width: 100%;
   --tw-bg-opacity: 1;
-  background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 0 127 / var(--tw-bg-opacity, 1));
   --tw-content: '';
+  content: var(--tw-content);
+}
+
+.menu-item {
+  /* Pink underline */
+}
+
+.menu-item::after{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-radius: 0.25rem;
   opacity: 0;
@@ -639,10 +646,6 @@ canvas {
 
 .fixed{
   position: fixed;
-}
-
-.relative{
-  position: relative;
 }
 
 .left-0{
@@ -682,12 +685,12 @@ canvas {
   margin-right: auto;
 }
 
-.-ml-20{
-  margin-left: -5rem;
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
-.-mt-10{
-  margin-top: -2.5rem;
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .mb-4{
@@ -730,10 +733,6 @@ canvas {
   display: none;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
 .h-11{
   height: 2.75rem;
 }
@@ -768,10 +767,6 @@ canvas {
 
 .max-w-2xl{
   max-width: 42rem;
-}
-
-.max-w-5xl{
-  max-width: 64rem;
 }
 
 .max-w-md{
@@ -876,14 +871,9 @@ canvas {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gray-800{
+.bg-slate-200{
   --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
 }
 
 .bg-slate-900{
@@ -891,23 +881,9 @@ canvas {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
 }
 
-.bg-gradient-to-br{
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-}
-
-.from-blue-950{
-  --tw-gradient-from: #172554 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(23 37 84 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-slate-900{
-  --tw-gradient-to: #0f172a var(--tw-gradient-to-position);
-}
-
 .object-cover{
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .p-10{
@@ -933,11 +909,6 @@ canvas {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}
-
-.py-12{
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .py-3{
@@ -988,11 +959,6 @@ canvas {
   line-height: 1.5rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1023,8 +989,9 @@ canvas {
   line-height: 1.25rem;
 }
 
-.leading-relaxed{
-  line-height: 1.625;
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
 }
 
 .text-blue-500{
@@ -1073,11 +1040,6 @@ canvas {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-purple-400:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 132 252 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:underline:hover{
   text-decoration-line: underline;
 }
@@ -1089,10 +1051,6 @@ canvas {
 }
 
 @media (min-width: 768px){
-  .md\:block{
-    display: block;
-  }
-
   .md\:flex{
     display: flex;
   }
@@ -1111,11 +1069,6 @@ canvas {
 
   .md\:p-8{
     padding: 2rem;
-  }
-
-  .md\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 

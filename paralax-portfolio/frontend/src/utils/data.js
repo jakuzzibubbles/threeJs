@@ -105,16 +105,6 @@ const skills = [
   },
   {
     id: "9",
-    name: "Firebase",
-    icon: SiFirebase,
-  },
-  {
-    id: "10",
-    name: "Webpack",
-    icon: SiWebpack,
-  },
-  {
-    id: "11",
     name: "Git & GitHub",
     icon: SiGit,
   },
@@ -123,28 +113,28 @@ const skills = [
 const projects = [
   {
     id: "1",
-    title: "Portfolio Website",
+    title: "Full Stack App",
     description:
       "A fully responsive portfolio website with a 3D background, built using React, Three.js, and Tailwind CSS. Includes sections for showcasing projects, skills, and contact information.",
-    image: "https://via.placeholder.com/300", // Replace with actual project image URL
+    image: "/src/assets/travel-app.png", // Replace with actual project image URL
     demo: "https://yourproject-demo.com",
     code: "https://github.com/yourusername/portfolio",
   },
   {
     id: "2",
-    title: "E-commerce Platform",
+    title: "Portfolio 1",
     description:
       "A MERN stack-based e-commerce platform with user authentication, shopping cart functionality, and a fully integrated payment gateway.",
-    image: "https://via.placeholder.com/300", // Replace with actual project image URL
+    image: "/src/assets/portfolio1.png", // Replace with actual project image URL
     demo: "https://ecommerce-demo.com",
     code: "https://github.com/yourusername/ecommerce",
   },
   {
     id: "3",
-    title: "Blog Platform",
+    title: "Memory Game",
     description:
       "A modern blog platform built with React, Node.js, and MongoDB. Includes features like user authentication, post creation, and a comment system.",
-    image: "https://via.placeholder.com/300", // Replace with actual project image URL
+    image: "/src/assets/memory-card.png", // Replace with actual project image URL
     demo: "https://blog-demo.com",
     code: "https://github.com/yourusername/blog",
   },
