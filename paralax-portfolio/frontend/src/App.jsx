@@ -21,6 +21,8 @@ const App = () => {
                 <Hero />
 
                 <Projects />
+                <br>
+                </br>
                 <Skills />
                 <Contact />
               </>

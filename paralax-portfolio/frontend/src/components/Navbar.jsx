@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <div className="w-screen hidden md:flex items-center justify-center py-2 fixed top-0 z-10">
         <nav
-          className="w-full shadow-lg shadow-gray-600/50 py-4 px-6 absolute left-0 top-0"
+          className="w-full py-4 px-6 absolute left-0 top-0"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
         >
           <ul className="flex items-bottom w-full">

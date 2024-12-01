@@ -3,7 +3,7 @@ import { projects } from "../utils/data";
 const Projects = () => {
   return (
     <section id="projects" className="p-10">
-      <h2 className="text-3xl font-bold mb-5">My Gallery</h2>
+      <h2 className="text-3xl font-bold mb-5">Gallery</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project) => (
           <div key={project.id} className="border p-5 rounded-lg shadow-lg">
@@ -23,6 +23,7 @@ const Projects = () => {
               >
                 Demo
               </a>
+            
               <a
                 href={project.code}
                 target="_blank"
