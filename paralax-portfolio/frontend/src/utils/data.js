@@ -26,7 +26,8 @@ const about = {
 
 const personalDetails = {
   name: "Linh Nguyen",
-  jobTitle: "Mainly Project Manager | Part-time Software Developer",
+  jobTitle:
+    "Officially Project Manager | Cloud Rookie |  Software Developer because it is fun ",
   location: "Berlin, Germany",
   links: [
     {
@@ -107,27 +108,28 @@ const skills = [
 const projects = [
   {
     id: "1",
-    title: "Full Stack App",
-    description:
-      "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features a dashboard for personalized experiences, token-based authentication for secure access, and backend APIs for user and story management, making it a digital space for travel enthusiasts to document and revisit their journeys.",
-    image: "/src/assets/travel-app.png",
-    demo: "https://jakuzzibubbles.github.io/TravelStory-App/",
-    code: "https://github.com/jakuzzibubbles/TravelStory-App",
-  },
-  {
-    id: "2",
     title: "Portfolio 1",
     description:
-      "I focused on creating a responsive design that provides an optimal viewing experience across various devices. By leveraging CSS frameworks and techniques like Flexbox and Grid, I ensured that my website was not only visually appealing but also user-friendly.",
+      "I focused on creating a responsive design that provides an optimal viewing experience across various devices. By leveraging CSS frameworks and techniques like Flexbox and Grid, I made sure that my website was not only visually appealing but also user-friendly.",
     image: "/src/assets/portfolio1.png",
     demo: "https://jakuzzibubbles-portfolio.vercel.app/",
     code: "https://github.com/jakuzzibubbles/portfolio-react",
   },
   {
+    id: "2",
+    title: "Full Stack App",
+    description:
+      "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features personalized user dashboards, token-based authentication, safe data storage, and backend API management.",
+    image: "/src/assets/travel-app.png",
+    demo: "https://jakuzzibubbles.github.io/TravelStory-App/",
+    code: "https://github.com/jakuzzibubbles/TravelStory-App",
+  },
+
+  {
     id: "3",
     title: "Memory Game",
     description:
-      "This is a React-based memory card game where players must click each food item only once. Repeated clicks trigger a `Game Over` popup, while successfully clicking all items without repetition shows a congratulatory message. The game features randomized item order, score tracking, and a styled UI with a dynamic grid and modal popups.",
+      "This is a React-based memory card game where players must click each food item only once. The game features randomized item order, score tracking, and a styled UI with a dynamic grid and modal popups.",
     image: "/src/assets/memory-card.png",
     demo: "https://the-odin-project-mu.vercel.app/",
     code: "https://github.com/jakuzzibubbles/the-odin-project/tree/master/memory-card",
