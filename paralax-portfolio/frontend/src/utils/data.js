@@ -2,7 +2,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
-  FaPhone,
   FaGlobe,
 } from "react-icons/fa";
 import {
@@ -13,11 +12,17 @@ import {
   SiHtml5,
   SiCss3,
   SiTailwindcss,
-  SiFirebase,
-  SiWebpack,
   SiGit,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
+
+const about = {
+  description: `
+    I am a highly motivated and skilled web developer with a passion for building modern, responsive web applications. 
+    With expertise in the MERN stack, I enjoy solving problems and creating intuitive user experiences. 
+    Always eager to learn and grow, I strive to stay up-to-date with the latest technologies.
+  `,
+};
 
 const personalDetails = {
   name: "Linh Nguyen",
@@ -27,39 +32,28 @@ const personalDetails = {
     {
       id: "1",
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/jakuzzibubbles/",
       icon: FaGithub,
     },
     {
       id: "2",
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourprofile",
+      url: "https://linkedin.com/in/jakuzzi263/",
       icon: FaLinkedin,
     },
     {
       id: "3",
       name: "Portfolio",
-      url: "https://yourportfolio.com",
+      url: "https://jakuzzibubbles-portfolio.vercel.app/",
       icon: FaGlobe,
     },
     {
       id: "4",
       name: "Email",
-      url: "mailto:your.email@example.com",
+      url: "mailto:jakuzzi263@icloud.com",
       icon: FaEnvelope,
     },
-    {
-      id: "5",
-      name: "Phone",
-      url: "tel:+1234567890",
-      icon: FaPhone,
-    },
   ],
-  about: `
-    I am a highly motivated and skilled web developer with a passion for building modern, responsive web applications. 
-    With expertise in the MERN stack, I enjoy solving problems and creating intuitive user experiences. 
-    Always eager to learn and grow, I strive to stay up-to-date with the latest technologies.
-  `,
 };
 
 const skills = [
@@ -115,41 +109,30 @@ const projects = [
     id: "1",
     title: "Full Stack App",
     description:
-      "A fully responsive portfolio website with a 3D background, built using React, Three.js, and Tailwind CSS. Includes sections for showcasing projects, skills, and contact information.",
-    image: "/src/assets/travel-app.png", // Replace with actual project image URL
-    demo: "https://yourproject-demo.com",
-    code: "https://github.com/yourusername/portfolio",
+      "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features a dashboard for personalized experiences, token-based authentication for secure access, and backend APIs for user and story management, making it a digital space for travel enthusiasts to document and revisit their journeys.",
+    image: "/src/assets/travel-app.png",
+    demo: "https://jakuzzibubbles.github.io/TravelStory-App/",
+    code: "https://github.com/jakuzzibubbles/TravelStory-App",
   },
   {
     id: "2",
     title: "Portfolio 1",
     description:
-      "A MERN stack-based e-commerce platform with user authentication, shopping cart functionality, and a fully integrated payment gateway.",
-    image: "/src/assets/portfolio1.png", // Replace with actual project image URL
-    demo: "https://ecommerce-demo.com",
-    code: "https://github.com/yourusername/ecommerce",
+      "I focused on creating a responsive design that provides an optimal viewing experience across various devices. By leveraging CSS frameworks and techniques like Flexbox and Grid, I ensured that my website was not only visually appealing but also user-friendly.",
+    image: "/src/assets/portfolio1.png",
+    demo: "https://jakuzzibubbles-portfolio.vercel.app/",
+    code: "https://github.com/jakuzzibubbles/portfolio-react",
   },
   {
     id: "3",
     title: "Memory Game",
     description:
-      "A modern blog platform built with React, Node.js, and MongoDB. Includes features like user authentication, post creation, and a comment system.",
-    image: "/src/assets/memory-card.png", // Replace with actual project image URL
-    demo: "https://blog-demo.com",
-    code: "https://github.com/yourusername/blog",
+      "This is a React-based memory card game where players must click each food item only once. Repeated clicks trigger a `Game Over` popup, while successfully clicking all items without repetition shows a congratulatory message. The game features randomized item order, score tracking, and a styled UI with a dynamic grid and modal popups.",
+    image: "/src/assets/memory-card.png",
+    demo: "https://the-odin-project-mu.vercel.app/",
+    code: "https://github.com/jakuzzibubbles/the-odin-project/tree/master/memory-card",
   },
 ];
 
-const contactInfo = {
-  email: {
-    text: "your.email@example.com",
-    icon: FaEnvelope,
-  },
-  phone: {
-    text: "+123 456 7890",
-    icon: FaPhone,
-  },
-  message: "Feel free to reach out to me via email or phone!",
-};
 
-export { personalDetails, skills, projects, contactInfo };
+export { about, skills, projects, personalDetails };
