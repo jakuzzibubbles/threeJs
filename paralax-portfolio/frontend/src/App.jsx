@@ -9,23 +9,27 @@ import SceneInit from "./components/SceneInit";
 
 const App = () => {
   return (
-     <Router>
-    <div className='bg-slate-200'>
-      <SceneInit />
-       <Navbar />
-          <Routes>
-            <Route path="/" element={
-                <>
-                  <Hero />
-                  <Skills />
-                  <Projects />
-                  <Contact />
-                </>
-              } />
-           </Routes>
-         </div>
-        <Footer />
-      </Router>
+    <Router>
+      <div className="bg-slate-50">
+        <SceneInit />
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+
+                <Projects />
+                <Skills />
+                <Contact />
+              </>
+            }
+          />
+        </Routes>
+      </div>
+      <Footer />
+    </Router>
   );
 };
 
