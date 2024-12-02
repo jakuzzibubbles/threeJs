@@ -18,6 +18,9 @@ import {
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
 import { GiSprint } from "react-icons/gi";
+import TravelApp from "../assets/travel-app.png";  // Correct relative path
+import Portfolio from "../assets/portfolio1.png";   // Correct relative path
+import MemoryGame from "../assets/memory-card.png"; // Correct relative path
 
 const about = {
   description: `
@@ -150,7 +153,7 @@ const projects = [
     title: "Full Stack App",
     description:
       "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features personalized user dashboards, token-based authentication, safe data storage, and backend API management.",
-    image: "/src/assets/travel-app.png",
+    image: TravelApp,
     demo: "https://jakuzzibubbles.github.io/TravelStory-App/",
     code: "https://github.com/jakuzzibubbles/TravelStory-App",
   },
@@ -159,7 +162,7 @@ const projects = [
     title: "Portfolio 1",
     description:
       "I focused on creating a responsive design that provides an optimal viewing experience across various devices. By leveraging CSS frameworks and techniques like Flexbox and Grid, I made sure that my website was not only visually appealing but also user-friendly.",
-    image: "/src/assets/portfolio1.png",
+    image: Portfolio,
     demo: "https://jakuzzibubbles-portfolio.vercel.app/",
     code: "https://github.com/jakuzzibubbles/portfolio-react",
   },
@@ -168,7 +171,7 @@ const projects = [
     title: "Memory Game",
     description:
       "This is a React-based memory card game where players must click each food item only once. The game features randomized item order, score tracking, and a styled UI with a dynamic grid and modal popups.",
-    image: "/src/assets/memory-card.png",
+    image: MemoryGame,
     demo: "https://the-odin-project-mu.vercel.app/",
     code: "https://github.com/jakuzzibubbles/the-odin-project/tree/master/memory-card",
   },
