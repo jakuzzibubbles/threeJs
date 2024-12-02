@@ -108,15 +108,6 @@ const skills = [
 const projects = [
   {
     id: "1",
-    title: "Portfolio 1",
-    description:
-      "I focused on creating a responsive design that provides an optimal viewing experience across various devices. By leveraging CSS frameworks and techniques like Flexbox and Grid, I made sure that my website was not only visually appealing but also user-friendly.",
-    image: "/src/assets/portfolio1.png",
-    demo: "https://jakuzzibubbles-portfolio.vercel.app/",
-    code: "https://github.com/jakuzzibubbles/portfolio-react",
-  },
-  {
-    id: "2",
     title: "Full Stack App",
     description:
       "The Travel App is a MERN stack platform where users can securely log in, create, view, and manage travel stories with descriptions and images. It features personalized user dashboards, token-based authentication, safe data storage, and backend API management.",
@@ -124,7 +115,15 @@ const projects = [
     demo: "https://jakuzzibubbles.github.io/TravelStory-App/",
     code: "https://github.com/jakuzzibubbles/TravelStory-App",
   },
-
+  {
+    id: "2",
+    title: "Portfolio 1",
+    description:
+      "I focused on creating a responsive design that provides an optimal viewing experience across various devices. By leveraging CSS frameworks and techniques like Flexbox and Grid, I made sure that my website was not only visually appealing but also user-friendly.",
+    image: "/src/assets/portfolio1.png",
+    demo: "https://jakuzzibubbles-portfolio.vercel.app/",
+    code: "https://github.com/jakuzzibubbles/portfolio-react",
+  },
   {
     id: "3",
     title: "Memory Game",
