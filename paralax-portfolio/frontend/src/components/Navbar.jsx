@@ -3,6 +3,11 @@ import { Link } from 'react-scroll';
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenuMotion } from "react-icons/cg";
 import MobileNavbar from "./MobileNavbar";
+import awsKnowledge from "../assets/aws-knowledge.png";
+import awsBuilder from "../assets/aws-builder.png";
+import aws from "../assets/aws.png";
+import Linux from "../assets/linux.jpg";
+import Myself from "../assets/myself.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
@@ -30,30 +35,30 @@ const Navbar = () => {
             </li>
             <div className="ml-8 flex items-center justiry-center gap-3">
               <img
-                src="/src/assets/myself.png"
+                src={Myself}
                 alt="Profile"
                 className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full transition-transform duration-300 ease-in-out hover:scale-125 border border-pink-800"
               />
               <img
-                src="/src/assets/aws.png"
+                src={aws}
                 alt="AWS"
                 className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
               />
 
               <img
-                src="/src/assets/linux.jpg"
+                src={Linux}
                 alt="Linux"
                 className="w-[50px] h-[50px] md:w-[60px] md:h-[60px] transition-transform duration-300 ease-in-out hover:scale-150"
               />
 
               <img
-                src="/src/assets/aws-knowledge.png"
+                src={awsKnowledge}
                 alt="AWS"
                 className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
               />
 
               <img
-                src="/src/assets/aws-builder.png"
+                src={awsBuilder}
                 alt="AWS"
                 className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] transition-transform duration-300 ease-in-out hover:scale-150"
               />
