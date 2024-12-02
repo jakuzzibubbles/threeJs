@@ -18,9 +18,9 @@ import {
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
 import { GiSprint } from "react-icons/gi";
-import TravelApp from "../assets/travel-app.png"; 
-import Portfolio from "../assets/portfolio1.png";
-import MemoryGame from "../assets/memory-card.png";
+import TravelApp from "/assets/travel-app.png"; 
+import Portfolio from "/assets/portfolio1.png";
+import MemoryGame from "/assets/memory-card.png";
 
 const about = {
   description: `

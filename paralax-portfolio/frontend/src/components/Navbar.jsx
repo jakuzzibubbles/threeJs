@@ -3,11 +3,11 @@ import { Link } from 'react-scroll';
 import { RiCloseFill } from "react-icons/ri";
 import { CgMenuMotion } from "react-icons/cg";
 import MobileNavbar from "./MobileNavbar";
-import awsKnowledge from "../assets/aws-knowledge.png";
-import awsBuilder from "../assets/aws-builder.png";
-import aws from "../assets/aws.png";
-import Linux from "../assets/linux.jpg";
-import Myself from "../assets/myself.png";
+import awsKnowledge from "/assets/aws-knowledge.png";
+import awsBuilder from "/assets/aws-builder.png";
+import aws from "/assets/aws.png";
+import Linux from "/assets/linux.jpg";
+import Myself from "/assets/myself.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState();
