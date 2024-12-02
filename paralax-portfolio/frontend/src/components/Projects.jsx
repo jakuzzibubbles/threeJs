@@ -3,7 +3,7 @@ import { projects } from "../utils/data";
 const Projects = () => {
   return (
     <section id="projects" className="p-10 mt-16">
-      <h2 className="text-3xl text-center font-bold mb-5">Gallery</h2>
+      <h2 className="text-3xl text-center mb-5">Gallery</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project) => (
           <div
@@ -15,10 +15,10 @@ const Projects = () => {
               alt={project.title}
               className="w-full h-40 object-cover rounded-lg"
             />
-            <h3 className="text-2xl text-right font-semibold mt-3">
+            <h3 className="text-2xl text-right mt-3">
               {project.title}
             </h3>
-            <p className="text-gray-700 mt-2">{project.description}</p>
+            <p className="mt-2">{project.description}</p>
             <div className="flex justify-between mt-3">
               <a
                 href={project.demo}

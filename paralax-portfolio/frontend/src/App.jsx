@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
+import ResumeSection from  "./components/ResumeSection";
 import SceneInit from "./components/SceneInit";
 
 const App = () => {
@@ -19,10 +20,9 @@ const App = () => {
             element={
               <>
                 <Hero />
-
                 <Projects />
-        
                 <Skills />
+                <ResumeSection />
                 <Contact />
               </>
             }

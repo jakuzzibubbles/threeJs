@@ -3,6 +3,8 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaGlobe,
+  FaCloud,
+  FaProjectDiagram
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -15,6 +17,7 @@ import {
   SiGit,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io5";
+import { GiSprint } from "react-icons/gi";
 
 const about = {
   description: `
@@ -60,48 +63,84 @@ const personalDetails = {
 const skills = [
   {
     id: "1",
-    name: "JavaScript (ES6+)",
+    title: "JavaScript",
     icon: SiJavascript,
+    comment:
+      "Mastering JavaScript—transforming ideas into interactive, dynamic features!",
   },
   {
     id: "2",
-    name: "React.js",
+    title: "React",
     icon: SiReact,
+    comment:
+      "Building interactive UIs that keep users engaged—like a good book!",
   },
   {
     id: "3",
-    name: "Node.js",
+    title: "NodeJs",
     icon: IoLogoNodejs,
+    comment:
+      "Creating efficient backends that handle requests with ease and speed!",
   },
   {
     id: "4",
-    name: "Express.js",
+    title: "Express",
     icon: SiExpress,
+    comment:
+      "Building powerful web servers that deliver smooth, real-time experiences!",
   },
   {
     id: "5",
-    name: "MongoDB",
+    title: "MongoDB",
     icon: SiMongodb,
+    comment:
+      "Managing data like a pro—keeping everything organized, even when it wants to party! 🎉",
   },
   {
     id: "6",
-    name: "HTML5",
+    title: "HTML5",
     icon: SiHtml5,
+    comment: "Building the web, one semantic tag at a time!",
   },
   {
     id: "7",
-    name: "CSS3",
+    title: "CSS3",
     icon: SiCss3,
+    comment:
+      "Styling the web with precision—making every pixel count! CSS3 is my toolkit for bringing designs to life.",
   },
   {
     id: "8",
-    name: "Tailwind CSS",
+    title: "Tailwind CSS",
     icon: SiTailwindcss,
+    comment: "Building UI components with ease—Tailwind is my CSS superhero!",
   },
   {
     id: "9",
-    name: "Git & GitHub",
+    title: "Git & GitHub",
     icon: SiGit,
+    comment:
+      "Version control made simple—keeping code organized and collaborative!",
+  },
+  {
+    id: "10",
+    icon: FaCloud,
+    title: "Cloud Computing",
+    comment: "Transforming clouds into seamless solutions—no rainy days here!",
+  },
+  {
+    id: "12",
+    icon: FaProjectDiagram,
+    title: "Digital Project Management",
+    comment:
+      "Guiding projects to success while keeping the team engaged and motivated.",
+  },
+  {
+    id: "13",
+    icon: GiSprint,
+    title: "Agile Methodologies & Scrum",
+    comment:
+      "Embracing agility like a pro—quick on my feet and faster with coffee!☕",
   },
 ];
 

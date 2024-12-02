@@ -21,16 +21,10 @@ const Navbar = () => {
         <nav className="w-full bg-pink-600/20 py-3 px-6 absolute left-0 top-0">
           <ul className="flex items-bottom w-full">
             <li>
-              <Link
-                to="hero"
-                smooth
-                spy
-                offset={-80}
-                className="menu-item font-semibold"
-              >
+              <Link to="hero" smooth spy offset={-80} className="menu-item">
                 <div>
-                  <span className="block text-4xl font-bold">LINH</span>
-                  <span className="block text-4xl font-bold">NGUYEN</span>
+                  <span className="block text-4xl">LINH</span>
+                  <span className="block text-4xl">NGUYEN</span>
                 </div>
               </Link>
             </li>
@@ -38,7 +32,7 @@ const Navbar = () => {
               <img
                 src="/src/assets/myself.png"
                 alt="Profile"
-                className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full transition-transform duration-300 ease-in-out hover:scale-125"
+                className="w-[80px] h-[80px] md:w-[100px] md:h-[100px] rounded-full transition-transform duration-300 ease-in-out hover:scale-125 border border-pink-800"
               />
               <img
                 src="/src/assets/aws.png"
@@ -82,6 +76,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
+                <Link to="resume" smooth spy offset={-80} className="menu-item">
+                  Resume
+                </Link>
+              </li>
+              <li>
                 <Link
                   to="contact"
                   smooth
@@ -99,7 +98,7 @@ const Navbar = () => {
       <div className="p-3 fixed top-0 right-0 z-50">
         <button
           onClick={toggleMenu}
-          className="w-11 h-11 text-sky-300 bg-blue-800/40 border border-sky-900/80 backdrop-blur-lg flex items-center justify-center rounded md:hidden z-50 ml-auto"
+          className="w-11 h-11 text-pink bg-pink-800/60 border border-pink-900/80 flex items-center justify-center rounded md:hidden z-50 ml-auto"
         >
           {isMenuOpen ? <RiCloseFill /> : <CgMenuMotion />}
         </button>

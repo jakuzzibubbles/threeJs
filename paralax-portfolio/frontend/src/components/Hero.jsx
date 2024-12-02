@@ -8,11 +8,11 @@ const Hero = () => {
     >
       <div className="w-screen p-6 flex flex-col justify-center items-center">
         <h3 className="text-3xl text-black">Hi, and welcome to my Portfolio</h3>
-        <div className="text-sm text-black mt-4 max-w-2xl">
+        <div className="text-black mt-4 max-w-2xl">
           <p className="mb-4">
             I&apos;m Linh, Free-time Software Developer and professional Project
             Powerhouse. Love swimming in the ocean, vietnamese street food,
-            cats, curious about the universe, cloud computing, and all things
+            cats, curious about the universe, cloud computing, all things art, and all things
             coding.
           </p>
 
@@ -33,7 +33,7 @@ const Hero = () => {
           <p className="mb-4">
             All that aside, I enjoy the process of solving problems, exploring
             the cloud, and leveraging these technologies to create impactful
-            solutions. Please feel free to reach out if you&apos;d wish to build
+            solutions. Please feel free to reach out if you&apos;d like to build
             beautiful, professional websites. I look forward to discuss your
             next project.✅
           </p>

@@ -12,28 +12,48 @@ const MobileNavbar = ({ isOpen, setIsMenuOpen }) => {
   };
   return (
     <div className="w-screen fixed top-0 z-20">
-      <div className="w-1/2 h-screen flex flex-col p-8 bg-blue-800/40 border border-sky-900/80">
-        <div className="mb-1" />
+      <div className="w-1/2 h-screen flex flex-col p-4 bg-pink-800/60 border border-pink-900/80">
+        <div className="ui-circle -ml-20 -mt-10 mb-10" />
 
         <ul>
           <li className="mb-5">
-            <a className="menu-item" onClick={() => handleScroll("hero")}>
+            <a
+              className="text-black font-semibold"
+              onClick={() => handleScroll("hero")}
+            >
               Home
             </a>
           </li>
 
           <li className="mb-5">
-            <a className="menu-item" onClick={() => handleScroll("projects")}>
+            <a
+              className="text-black font-semibold"
+              onClick={() => handleScroll("projects")}
+            >
               Projects
             </a>
           </li>
           <li className="mb-5">
-            <a className="menu-item" onClick={() => handleScroll("skills")}>
+            <a
+              className="text-black font-semibold"
+              onClick={() => handleScroll("skills")}
+            >
               Skills
             </a>
           </li>
           <li className="mb-5">
-            <a className="menu-item" onClick={() => handleScroll("contact")}>
+            <a
+              className="text-black font-semibold"
+              onClick={() => handleScroll("resume")}
+            >
+              Resume
+            </a>
+          </li>
+          <li className="mb-5">
+            <a
+              className="text-black font-semibold"
+              onClick={() => handleScroll("contact")}
+            >
               Contact
             </a>
           </li>
