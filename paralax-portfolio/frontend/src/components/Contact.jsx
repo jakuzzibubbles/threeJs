@@ -1,9 +1,3 @@
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaGlobe,
-} from "react-icons/fa";
 import { personalDetails } from "../utils/data"
 
 const Contact = () => {
