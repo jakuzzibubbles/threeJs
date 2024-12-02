@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 const SkillsCard = ({ icon: Icon, title, comment }) => {
   return (
-    <div className="bg-slate-900 rounded-full border border-cyan-400 h-16 w-16 flex items-center justify-center">
-      <div className="flex items-center justify-between mb-1">
+    <div className="bg-pink-600/20 rounded-lg border-pink-400 p-6 h-16 w-26 flex items-center justify-end mb-2">
+      <div className="flex justify-between mb-1">
         <p className="text-base">{title}</p>
-        <Icon className="text-white text-3xl" />
+        <Icon className="text-black text-3xl mr-4" />
       </div>
 
       <p className="text-xs font-light leading-5 opacity-80">{comment}</p>
@@ -22,13 +22,11 @@ SkillsCard.propTypes = {
 
 const Skills = () => {
   return (
-    <section className="w-full px-6 mx-auto pb-20" id="skills">
-      <div className="rounded-lg border border-cyan-800/40 p-2 md:p-4">
-        <h5 className="text-xl text-gray-700 hover:underline font-semibold font-medium mb-5">
-          Languages & Tools
-        </h5>
+    <section className="w-full px-6 mx-auto pb-20 mt-80" id="skills">
+      <div className="rounded-lg border-cyan-800/40 p-2 md:p-4">
+        <h2 className="text-3xl text-center font-bold mb-5">Languages & Tools</h2>
 
-        <div className="grid grid-cols-6 sm:grid-cols-9 md:grid-cols-9 gap-8">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-4">
           {skills.map((skill) => (
             <SkillsCard
               key={skill.id}

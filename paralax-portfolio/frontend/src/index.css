@@ -47,7 +47,7 @@
 @layer components {
   .menu-item {
     
-    @apply text-sm md:text-base font-bold text-white relative cursor-pointer after:content-[''] after:w-full after:h-[3px] after:bg-[#ff007f] after:absolute after:left-0 after:-bottom-2 after:rounded after:translate-x-11 after:opacity-0 after:transition-all after:translate-x-0 after:hover:opacity-100;
+    @apply text-sm md:text-base font-bold text-black relative cursor-pointer after:content-[''] after:w-full after:h-[3px] after:bg-[#ff007f] after:absolute after:left-0 after:-bottom-2 after:rounded after:translate-x-11 after:opacity-0 after:transition-all after:translate-x-0 after:hover:opacity-100;
   }
 
   .primary-btn {

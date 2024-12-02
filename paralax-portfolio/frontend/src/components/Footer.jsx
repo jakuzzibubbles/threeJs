@@ -2,11 +2,8 @@
 
 const Footer = () => {
   return (
-    <footer
-      className="text-white py-6"
-      style={{ backgroundColor: "rgba(0, 0, 0, 0.9)" }}
-    >
-      <div className="max-w-screen-xl mx-auto px-4 flex justify-end">
+    <footer className="text-black bg-pink-600/20 py-6">
+      <div className="max-w-screen-xl mx-auto flex justify-end">
         <p>&copy; {new Date().getFullYear()} Linh Nguyen</p>
       </div>
     </footer>
