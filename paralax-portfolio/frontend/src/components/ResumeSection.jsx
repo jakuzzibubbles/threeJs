@@ -8,7 +8,7 @@ const ResumeSection = () => {
   };
 
   return (
-    <section id="resume" className="p-6 relative">
+    <section id="resume" className="p-6 relative mt-10">
       <div className="buttons mb-4 flex justify-center items-center space-x-4">
         <button
           onClick={toggleResumeVisibility}

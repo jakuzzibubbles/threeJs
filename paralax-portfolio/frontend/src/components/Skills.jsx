@@ -5,9 +5,9 @@ import PropTypes from 'prop-types';
 
 const Skills = () => {
   return (
-    <section className="max-w-screen-xl px-6 mx-auto pb-20" id="skills">
+    <section className="max-w-screen-xl px-6 mx-auto pb-20 mt-28" id="skills">
       <div className="p-4 md:p-8">
-        <h2 className="text-3xl text-center mb-5">Languages & Tools</h2>
+        <h2 className="text-3xl text-center mb-5 mt-24">Languages & Tools</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-white">
           {skills.map((skill) => (
@@ -27,7 +27,7 @@ const Skills = () => {
 
 const SkillsCard = ({ icon: Icon, title, comment }) => {
   return (
-    <div className="bg-pink-600/60 rounded-border border-pink-400 p-5 rounded-lg border-pink-400">
+    <div className="bg-pink-600/60 rounded-border border-pink-900 p-5 rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:bg-pink-700 hover:scale-105">
       <div className="flex items-center justify-between mb-5">
         <p className="text-base">{title}</p>
         <Icon className="text-black text-3xl mr-4" />

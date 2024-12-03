@@ -22,14 +22,6 @@ import TravelApp from "/assets/travel-app.png";
 import Portfolio from "/assets/portfolio1.png";
 import MemoryGame from "/assets/memory-card.png";
 
-const about = {
-  description: `
-    I am a highly motivated and skilled web developer with a passion for building modern, responsive web applications. 
-    With expertise in the MERN stack, I enjoy solving problems and creating intuitive user experiences. 
-    Always eager to learn and grow, I strive to stay up-to-date with the latest technologies.
-  `,
-};
-
 const personalDetails = {
   name: "Linh Nguyen",
   jobTitle:
@@ -50,12 +42,6 @@ const personalDetails = {
     },
     {
       id: "3",
-      name: "Portfolio",
-      url: "https://jakuzzibubbles-portfolio.vercel.app/",
-      icon: FaGlobe,
-    },
-    {
-      id: "4",
       name: "Email",
       url: "mailto:jakuzzi263@icloud.com",
       icon: FaEnvelope,
@@ -97,7 +83,7 @@ const skills = [
     title: "MongoDB",
     icon: SiMongodb,
     comment:
-      "Managing data like a pro—keeping everything organized, even when it wants to party! 🎉",
+      "Managing data like a pro—keeping everything organized, even when it wants to party!",
   },
   {
     id: "6",
@@ -110,7 +96,7 @@ const skills = [
     title: "CSS3",
     icon: SiCss3,
     comment:
-      "Styling the web with precision—making every pixel count! CSS3 is my toolkit for bringing designs to life.",
+      "Styling the web with precision—making every pixel count!",
   },
   {
     id: "8",
@@ -143,7 +129,7 @@ const skills = [
     icon: GiSprint,
     title: "Agile Methodologies & Scrum",
     comment:
-      "Embracing agility like a pro—quick on my feet and faster with coffee!☕",
+      "Embracing agility like a pro—quick on my feet and faster with coffee!",
   },
 ];
 
@@ -178,4 +164,4 @@ const projects = [
 ];
 
 
-export { about, skills, projects, personalDetails };
+export { skills, projects, personalDetails };
